@@ -1,0 +1,6 @@
+KERNEL=="video*", SUBSYSTEMS=="usb", ATTRS{idVendor}=="04f2", ATTRS{idProduct}=="a14b", KERNELS=="3-1",NAME="video0", SYMLINK+="my_video1"
+KERNEL=="video*", SUBSYSTEMS=="usb", ATTRS{idVendor}=="04f2", ATTRS{idProduct}=="a14b", KERNELS=="3-2",NAME="video1", SYMLINK+="my_video2"
+KERNEL=="video*", SUBSYSTEMS=="usb", ATTRS{idVendor}=="04f2", ATTRS{idProduct}=="a14b", KERNELS=="1-1.1",NAME="video2", SYMLINK+="my_video3"
+KERNEL=="video*", SUBSYSTEMS=="usb", ATTRS{idVendor}=="04f2", ATTRS{idProduct}=="a14b", KERNELS=="2-1.5",NAME="video3", SYMLINK+="my_video4"
+KERNEL=="video*", SUBSYSTEMS=="usb", ATTRS{idVendor}=="04f2", ATTRS{idProduct}=="a14b", KERNELS=="3-3",NAME="video4", SYMLINK+="my_video5"
+
