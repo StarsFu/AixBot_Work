@@ -55,8 +55,9 @@ cd  ~/catkin_ws/src
 echo "add opencv demo"
 git clone https://github.com/ykevin/opencv_apps.git
 
+cd  ~/catkin_ws/src/
 echo "slove rosserial indigo version"
-#git clone  https://github.com/ros-drivers/rosserial.git 
+git clone  https://github.com/ros-drivers/rosserial.git 
 
 echo "add ps3"
 #sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
@@ -89,8 +90,8 @@ echo "add imu filter"
 git clone https://github.com/ykevin/imu_filter_madgwick.git
 
 
-#cd ~/catkin_ws/
-#catkin_make -j1
+cd ~/catkin_ws/
+catkin_make -j1
 
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
