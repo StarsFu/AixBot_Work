@@ -29,50 +29,49 @@ sudo apt-get install -y ros-$ver\-web-video-server
 
 mkdir ~/catkin_ws/src -p
 cd ~/catkin_ws/src
-mkdir depth_camera lidar teleop
-
+#mkdir depth_camera lidar teleop
+mkdir  aixbot_lidar aixbot_teleop aixbot_rosserial
 #git clone https://github.com/ykevin/rikirobot_project.git
 #cd rikirobot_project
 #git submodule init
 #git submodule update
 
-cd ~/catkin_ws/src
-echo "add camera ros packages!!"
-git clone https://github.com/ktossell/camera_umd.git
+#cd ~/catkin_ws/src
+#echo "add camera ros packages!!"
+#git clone https://github.com/ktossell/camera_umd.git
 
-echo "reinstall geometry2 sloved imu error"
-git clone https://github.com/ros/geometry2.git
+#echo "reinstall geometry2 sloved imu error"
+#git clone https://github.com/ros/geometry2.git
 
 
-cd depth_camera
-echo "add Astra xtion live"
-echo "Astra xtion driver please: https://orbbec3d.com/develop/"
-git clone https://github.com/orbbec/ros_astra_launch.git
-git clone https://github.com/orbbec/ros_astra_camera.git
-git clone https://github.com/xaxxontech/depthimage_to_laserscan.git
+#cd depth_camera
+#echo "add Astra xtion live"
+#echo "Astra xtion driver please: https://orbbec3d.com/develop/"
+#git clone https://github.com/orbbec/ros_astra_launch.git
+#git clone https://github.com/orbbec/ros_astra_camera.git
+#git clone https://github.com/xaxxontech/depthimage_to_laserscan.git
 
-cd  ~/catkin_ws/src
-echo "add opencv demo"
-git clone https://github.com/ykevin/opencv_apps.git
+#cd  ~/catkin_ws/src
+#echo "add opencv demo"
+#git clone https://github.com/ykevin/opencv_apps.git
 
-cd  ~/catkin_ws/src/
+cd  ~/catkin_ws/src/aixbot_teleop/
 echo "slove rosserial indigo version"
 git clone  https://github.com/ros-drivers/rosserial.git 
 
-echo "add ps3"
+#echo "add ps3"
 #sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
 #sudo pip install pybluez
 #git clone https://github.com/ros-drivers/joystick_drivers.git
 
-echo "add Twist multiplexer"
+#echo "add Twist multiplexer"
 #git clone https://github.com/ros-teleop/twist_mux.git
 
-cd teleop
+cd  ~/catkin_ws/src/aixbot_rosserial/
 echo "add Generic Keyboard Teleop"
 git clone https://github.com/ykevin/teleop_twist_keyboard.git
 
-cd ~/catkin_ws/src
-cd lidar
+cd  ~/catkin_ws/src/aixbot_lidar/
 echo "add hector slam"
 git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
 
