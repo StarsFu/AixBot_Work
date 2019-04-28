@@ -31,10 +31,6 @@ mkdir ~/catkin_ws/src -p
 cd ~/catkin_ws/src
 #mkdir depth_camera lidar teleop
 mkdir  aixbot_lidar aixbot_teleop aixbot_rosserial
-#git clone https://github.com/ykevin/rikirobot_project.git
-#cd rikirobot_project
-#git submodule init
-#git submodule update
 
 #cd ~/catkin_ws/src
 #echo "add camera ros packages!!"
