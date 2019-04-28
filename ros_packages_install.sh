@@ -55,7 +55,7 @@ mkdir  aixbot_lidar aixbot_teleop aixbot_rosserial
 #echo "add opencv demo"
 #git clone https://github.com/ykevin/opencv_apps.git
 
-cd  ~/catkin_ws/src/aixbot_teleop/
+cd  ~/catkin_ws/src/aixbot_rosserial/
 echo "slove rosserial indigo version"
 git clone  https://github.com/ros-drivers/rosserial.git 
 
@@ -67,7 +67,7 @@ git clone  https://github.com/ros-drivers/rosserial.git
 #echo "add Twist multiplexer"
 #git clone https://github.com/ros-teleop/twist_mux.git
 
-cd  ~/catkin_ws/src/aixbot_rosserial/
+cd  ~/catkin_ws/src/aixbot_teleop/
 echo "add Generic Keyboard Teleop"
 git clone https://github.com/ykevin/teleop_twist_keyboard.git
 
@@ -96,5 +96,5 @@ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 sudo usermod -aG dialout $USER
-
+rospack profile
 echo "ROS Packages Installed Successfully"
